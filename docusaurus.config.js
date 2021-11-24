@@ -112,6 +112,7 @@ const config = {
             label: 'Doc-Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/project', label: 'Project', position: 'left'},
           {
             href: 'https://github.com/ryuch91',
             label: 'GitHub',
@@ -165,6 +166,10 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
+              },
+              {
+                label: 'Project',
+                to: '/project',
               },
             ],
           },
