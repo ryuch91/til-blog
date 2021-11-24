@@ -18,21 +18,6 @@ const config = {
   projectName: 'til-blog', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
-  i18n: {
-    defaultLocale: 'ko',
-    locales: ['ko', 'en'],
-    localeConfigs: {
-      ko: {
-        label: 'Korean',
-        direction: 'ltr',
-      },
-      en: {
-        label: 'English',
-        direction: 'ltr',
-      },
-    },
-  },
-
   presets: [
     [
       '@docusaurus/preset-classic',
