@@ -9,7 +9,7 @@ const config = {
   title: 'FreeDumb\'s Site',
   tagline: 'Everything that I Learned',
   url: 'https://ryuch91.github.io',
-  baseUrl: '/',
+  baseUrl: '/til-blog/', //Github에서 호스팅하는 프로젝트
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'warn',
@@ -17,6 +17,7 @@ const config = {
   organizationName: 'ryuch91', // Usually your GitHub org/user name.
   projectName: 'til-blog', // Usually your repo name.
   deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   presets: [
     [
