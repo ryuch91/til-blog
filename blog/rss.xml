@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>FreeDumb's Site Blog</title>
+        <link>https://ryuch91.github.io/til-blog/blog</link>
+        <description>FreeDumb's Site Blog</description>
+        <lastBuildDate>Wed, 17 Nov 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Test Post]]></title>
+            <link>https://ryuch91.github.io/til-blog/blog/test-post</link>
+            <guid>test-post</guid>
+            <pubDate>Wed, 17 Nov 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Docusaurus Markdown Features will be tested in this post.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[First Blog Post]]></title>
+            <link>https://ryuch91.github.io/til-blog/blog/first-blog-post</link>
+            <guid>first-blog-post</guid>
+            <pubDate>Wed, 17 Nov 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Docusaurus를 사용해서 TIL 블로그를 시작해보려고 한다.]]></description>
+            <content:encoded><![CDATA[<p><strong>Docusaurus</strong>를 사용해서 TIL 블로그를 시작해보려고 한다.</p><p>아직까지는 기능이나 외관이 아주 만족스럽다.</p><p><img src="./docusaurus-plushie-banner.jpeg" alt="Docusaurus Plushie"/></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[MDX Blog Post]]></title>
+            <link>https://ryuch91.github.io/til-blog/blog/mdx-blog-post</link>
+            <guid>mdx-blog-post</guid>
+            <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>
+            <content:encoded><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/">MDX</a>.</p><p>:::tip</p><p>Use the power of React to create interactive blog posts.</p><pre><code class="language-js">&lt;button onClick={() =&gt; alert(&#x27;button clicked!&#x27;)}&gt;Click me!&lt;/button&gt;
+</code></pre><button>Click me!</button><p>:::</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
