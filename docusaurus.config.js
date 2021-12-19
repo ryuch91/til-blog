@@ -9,7 +9,7 @@ const config = {
   title: 'FreeDumb\'s Site',
   tagline: 'Everything that I Learned',
   url: 'https://ryuch91.github.io',
-  baseUrl: '/til-blog/', //Github에서 호스팅하는 프로젝트
+  baseUrl: '/', //Github에서 호스팅하는 프로젝트
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'warn',

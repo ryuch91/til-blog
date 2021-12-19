@@ -31,3 +31,15 @@ $ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
+### Customization
+
+Logo color : #FFF, #55F
+Favicon font family : Lobster
+Favicon font variant : Regular 400 Normal
+Font size : 110
+Font check : https://fonts.google.com
+Favicon, Icon generator : https://favicon.io/favicon-generator/
+favicon to logo convertor : https://onlineconvertfree.com/kr/convert/png/
+
