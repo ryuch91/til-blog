@@ -20,7 +20,6 @@ import styles from "./styles.module.css";
 */
 const ProjectCard = (props) => {
   const { project } = props;
-  console.log( project.title );
   return(
     <div
       id={project.title}
