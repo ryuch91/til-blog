@@ -6,23 +6,156 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary: #5555ff;
+  --ifm-color-primary-dark: #3333ff;
+  --ifm-color-primary-darker: #2222ff;
+  --ifm-color-primary-darkest: #0000ee;
+  --ifm-color-primary-light: #7777ff;
+  --ifm-color-primary-lighter: #8888ff;
+  --ifm-color-primary-lightest: #bbbbff;
+
+  --ifm-color-secondary: #878787;
+  --ifm-color-secondary-dark: #616161;
+  --ifm-color-secondary-darker: #2e2e2e;
+  --ifm-color-secondary-darkest: #141414;
+  --ifm-color-secondary-light: #adadad;
+  --ifm-color-secondary-lighter: #d4d4d4;
+  --ifm-color-secondary-lightest: #ededed;
+  /* --ifm-background-color: #ededed; */
+  --ifm-color-success: #0f9d58;
+  --ifm-color-warning: #f4b400;
+  --ifm-color-danger: #db4437;
+  --ifm-link-color: #5555ff;
+  --ifm-code-font-size: 90%;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(72, 77, 91);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+}
+
+/* html[data-theme='dark'] {
+  --ifm-background-color: #1e2125;
+  --ifm-background-surface-color: #121212;
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+} */
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.textUpper {
+  text-transform: uppercase;
+}
+
+.colorPrimary {
+  color: var(--ifm-color-primary);
+}
+
+.colorSuccess {
+  color: var(--ifm-color-success);
+}
+
+.colorWarning {
+  color: var(--ifm-color-warning);
+}
+
+.colorDanger {
+  color: var(--ifm-color-danger);
+}
+
+.bgColorPrimary {
+  background-color: var(--ifm-color-primary);
+}
+
+.bgColorSuccess {
+  background-color: var(--ifm-color-success);
+}
+
+.bgColorDanger {
+  background-color: var(--ifm-color-danger);
+}
+
+.underlineColorPrimary {
+  border-bottom: 4px solid var(--ifm-color-primary);
+}
+
+.underlineColorSuccess {
+  border-bottom: 4px solid var(--ifm-color-success);
+}
+
+.underlineColorWarning {
+  border-bottom: 4px solid var(--ifm-color-warning);
+}
+
+.underlineColorDanger {
+  border-bottom: 4px solid var(--ifm-color-danger);
+}
+
+.admonition a,
+.admonition a:hover {
+  color: var(--ifm-alert-color);
+  text-decoration: underline;
+}
+
+.wideBodyMaxWidth {
+  max-width: 640px;
+}
+
+.contentTableContainer table {
+  display: table;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+
+.contentTableContainer th:first-child {
+  width: 5%;
+}
+
+.contentTableContainer td:first-child {
+  text-align: right;
+}
+
+.contentTableContainer th:last-child {
+  width: 25%;
+}
+
+@media screen and (max-width: 966px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }

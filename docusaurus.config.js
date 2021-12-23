@@ -1,13 +1,63 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const math = require("remark-math");
+const katex = require("rehype-katex");
+
+const lightCodeTheme = require('prism-react-renderer/themes/dracula');
+const darkCodeTheme = require('prism-react-renderer/themes/nightOwl');
+
+const internetProfiles = {
+  linkedin: {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/ryuch91/",
+  },
+  github: {
+    label: "GitHub",
+    href: "https://github.com/ryuch91",
+  },
+  stackoverflow: {
+    label: "Stack Overflow",
+    href: "https://stackoverflow.com/users/8970273/freedumb?tab=profile",
+  },
+  email: {
+    label: "Email",
+    href: "mailto:ryuch91@gmail.com",
+  },
+  blog: {
+    label: "Blog",
+    to: "/blog",
+  },
+  docsSystem: {
+    label: "Docs-System",
+    to: "/docs/system/intro",
+  },
+  docsCode: {
+    label: "Docs-Code",
+    to: "/docs/code/intro",
+  },
+  docsTutorial: {
+    label: "Docs-Tutorial",
+    to: "/docs/tutorial/intro",
+  },
+  projects: {
+    label: "Projects",
+    to: "/projects",
+  },
+  about: {
+    label: "About",
+    to: "/about",
+  },
+  resume: {
+    label: "Resume",
+    to: "/about",
+  },
+};
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'FreeDumb\'s Site',
-  tagline: 'Everything that I Learned',
+  title: 'FreeDumb',
+  tagline: 'I am a SW Developer and like to learn and record.',
   url: 'https://ryuch91.github.io',
   baseUrl: '/', //Github에서 호스팅하는 프로젝트
   onBrokenLinks: 'throw',
@@ -28,6 +78,10 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/ryuch91/til-blog/tree/master/',
+          disableVersioning: false,
+          editCurrentVersion: false,
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
@@ -53,6 +107,12 @@ const config = {
     //{
     //  href: 'http://mydomain.com/style.css',
     //}
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css",
+      type: "text/css",
+      integrity: "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
+      crossorigin: "anonymous",
+    },
   ],
 
   themeConfig:
@@ -70,15 +130,17 @@ const config = {
           },
         },
       },
-      image: 'img/docusaurus.png', // default image for meta tag (like og:image / twitter:image)
+      image: 'img/logo.svg', // default image for meta tag (like og:image / twitter:image)
       navbar: {
-        title: 'FreeDumb\'s Site',
+        title: 'FreeDumb',
+        hideOnScroll: true,
         logo: {
-          alt: 'My Site Logo',
+          alt: 'FreeDumb',
           src: 'img/logo.svg',
         },
         // item별로 navbar에 링크 생성
         items: [
+          { to : "/blog", label: "Blog", position: "left" },
           {
             type: 'doc',
             docId: 'system/intro',
@@ -97,19 +159,13 @@ const config = {
             position: 'left',
             label: 'Doc-Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/project', label: 'Project', position: 'left'},
-          {
-            href: 'https://github.com/ryuch91',
-            label: 'GitHub',
-            position: 'right',
-          },
+          {to: '/projects', label: 'Projects', position: 'right'},
+          {to: '/about', label: 'About', position: 'right' },
         ],
       },
       footer: {
-        style: 'dark',
         logo: {
-          alt: 'Docusaurus default logo',
+          alt: 'FreeDumb',
           src: 'img/logo.svg',
           href: 'https://github.com/ryuch91',
           width: 75,
@@ -119,48 +175,30 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'System',
-                to: '/docs/system/intro',
-              },
-              {
-                label: 'Code',
-                to: '/docs/code/intro',
-              },
-              {
-                label: 'Tutorial',
-                to: '/docs/tutorial/intro',
-              },
+              internetProfiles.docsCode,
+              internetProfiles.docsSystem,
+              internetProfiles.docsTutorial,
             ],
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/users/8970273/freedumb?tab=profile',
-              },
-              {
-                label: 'Github',
-                href: 'https://github.com/ryuch91',
-              },
+              internetProfiles.github,
+              internetProfiles.linkedin,
+              internetProfiles.stackoverflow,
+              internetProfiles.email,
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'Project',
-                to: '/project',
-              },
+              internetProfiles.blog,
+              internetProfiles.about,
+              internetProfiles.projects,
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`,
+        copyright: `Last updated on ${new Date().toDateString()}. Built with Docusaurus(@EvanTay Theme).`
       },
       prism: {
         theme: lightCodeTheme,
