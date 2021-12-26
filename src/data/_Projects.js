@@ -41,7 +41,7 @@ const projects = [
         link: "https://www.google.com",
       },
     ],
-  },
+  }
 ];
 
 export default projects;
