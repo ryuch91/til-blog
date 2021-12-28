@@ -60,8 +60,8 @@ function Projects() {
               className="row margin-bottom--lg"
               style={{ display: showProjectItem ? "none" : "flex" }}
             >
-              {projects.map((project) => (
-                <ProjectCard project={project} />
+              {projects.map((project, index) => (
+                <ProjectCard project={project} key={index}/>
               ))}
             </div>
             <div

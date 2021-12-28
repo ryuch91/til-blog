@@ -19,7 +19,7 @@ import styles from "./styles.module.css";
 *   imageUrl, period, tech
 */
 const ProjectCard = (props) => {
-  const { project } = props;
+  const { project, index } = props;
   return(
     <div
       id={project.title}
