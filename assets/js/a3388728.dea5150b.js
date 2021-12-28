@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktil_blog=self.webpackChunktil_blog||[]).push([[139],{1614:function(t){t.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/etc","name":"etc","count":1,"permalink":"/blog/tags/etc"}')}}]);

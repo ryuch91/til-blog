@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktil_blog=self.webpackChunktil_blog||[]).push([[535],{5641:function(t){t.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Test Post","permalink":"/til-blog/blog/test-post"},{"title":"First Blog Post","permalink":"/til-blog/blog/first-blog-post"},{"title":"MDX Blog Post","permalink":"/til-blog/blog/mdx-blog-post"}]}')}}]);
