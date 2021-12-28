@@ -7,7 +7,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 
 import styles from "./styles.module.css";
-import SocialLinks from "./components/SocialLinks";
+import SocialLinks from "../components/SocialLinks";
 
 function Home() {
   const context = useDocusaurusContext();

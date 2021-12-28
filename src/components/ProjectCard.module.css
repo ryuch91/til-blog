@@ -1,0 +1,25 @@
+:global(.card__image) {
+  height: 164px;
+  overflow: hidden;
+}
+
+:global(.card__image) h2 {
+  display: inline-block;
+  margin: 12px;
+}
+
+.projectCard {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-pagination-nav-border-radius);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.projectItemButton {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  text-transform: uppercase;
+}

@@ -15,8 +15,8 @@ import {
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
-import CategoryIcon from "./CategoryIcon";
-import ProjectCard from "./ProjectCard";
+import CategoryIcon from "../../components/CategoryIcon";
+import ProjectCard from "../../components/ProjectCard";
 import styles from "./styles.module.css";
 import projects from "../../data/_Projects";
 
