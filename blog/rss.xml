@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>FreeDumb's Site Blog</title>
-        <link>https://ryuch91.github.io/til-blog/blog</link>
-        <description>FreeDumb's Site Blog</description>
+        <title>FreeDumb Blog</title>
+        <link>https://ryuch91.github.io/blog</link>
+        <description>FreeDumb Blog</description>
         <lastBuildDate>Wed, 17 Nov 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Test Post]]></title>
-            <link>https://ryuch91.github.io/til-blog/blog/test-post</link>
+            <link>https://ryuch91.github.io/blog/test-post</link>
             <guid>test-post</guid>
             <pubDate>Wed, 17 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Docusaurus Markdown Features will be tested in this post.]]></description>
         </item>
         <item>
             <title><![CDATA[First Blog Post]]></title>
-            <link>https://ryuch91.github.io/til-blog/blog/first-blog-post</link>
+            <link>https://ryuch91.github.io/blog/first-blog-post</link>
             <guid>first-blog-post</guid>
             <pubDate>Wed, 17 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Docusaurus를 사용해서 TIL 블로그를 시작해보려고 한다.]]></description>
@@ -24,7 +24,7 @@
         </item>
         <item>
             <title><![CDATA[MDX Blog Post]]></title>
-            <link>https://ryuch91.github.io/til-blog/blog/mdx-blog-post</link>
+            <link>https://ryuch91.github.io/blog/mdx-blog-post</link>
             <guid>mdx-blog-post</guid>
             <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>

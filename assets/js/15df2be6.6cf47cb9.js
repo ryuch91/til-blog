@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktil_blog=self.webpackChunktil_blog||[]).push([[32],{6802:function(l){l.exports=JSON.parse('{"allTagsPath":"/til-blog/blog/tags","slug":"/til-blog/blog/tags/life","name":"life","count":1,"permalink":"/til-blog/blog/tags/life"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktil_blog=self.webpackChunktil_blog||[]).push([[428],{4989:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/markdown","name":"markdown","count":1,"permalink":"/blog/tags/markdown"}')}}]);
