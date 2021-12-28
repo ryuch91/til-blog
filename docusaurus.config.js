@@ -59,7 +59,7 @@ const config = {
   title: 'FreeDumb',
   tagline: 'I am a SW Developer and like to learn and record.',
   url: 'https://ryuch91.github.io',
-  baseUrl: '/', //Github에서 호스팅하는 프로젝트
+  baseUrl: '/til-blog/', //Github에서 호스팅하는 프로젝트
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'warn',
